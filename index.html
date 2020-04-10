@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<meta name="description" content="Présentation d'Agile avec reveal.js">
+		<meta name="author" content="Jimmy RUNDSTADLER">
+		<title>Agile</title>
+
+		<link rel="stylesheet" href="reveal/css/reset.css">
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal/lib/css/monokai.css">
+
+		<!-- Custom style -->
+		<style type="text/css">
+			#footer {
+				position: absolute;
+				bottom: 0%;
+				left: 1%;
+			}
+			#createdBy {
+				position: absolute;
+				bottom: 0%;
+				left: 50%;
+				transform: translate(-50%, 0%);
+				text-align: center;
+			}
+			p, ul{
+				font-size: smaller;
+			}
+			ul, li, .justify{
+				text-align: justify;
+			}
+			.example{
+				font-size: smaller;
+				color:#1b91ff;
+				font-style: italic;
+			}
+			.important{
+				color:#1b91ff;
+			}
+		</style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- Page de garde-->
+				<section>
+					<h3>Méthodologie de gestion de projet</h3>
+					<h1>Agile</h1>
+				</section>
+
+				<section>
+					<h3>Sommaire</h3>
+					<ul>
+						<li>1 - Agile, ça vient d'où ? c'est quoi ?</li>
+						<li>2 - L'approche Agile</li>
+						<li>3 - Zoom sur le manifest Agile</li>
+						<li>4 - Le futur de l'Agilité</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3>Partie 1 / 4</h3>
+					<h2>Agile, c'est quoi ?</h2>
+				</section>
+
+				<section>
+					<h3>Selon vous, quand a été signé le manifest Agile ?</h3>
+					<img src="./img/Quand.png" alt="reponse"/>
+				</section>
+
+				<section>
+					<h3>Historique</h3>
+					<p class="fragment fade-in-then-semi-out justify">Les méthodes Agiles existaient déjà et étaient déjà appliquées avant la création du manifest Agile mais chacun l'applique à sa façon avec plus ou moins de succès.</p>
+					<p class="fragment fade-in-then-semi-out justify">17 spécialistes en développement logiciel se réunissent et s'accordent sur le fait que les méthodes dites traditionnelles ne sont pas adaptées à une évolution rapide et concurrentielle du marché et des organisations.</p>
+					<p class="fragment fade-in-then-semi-out justify">A la fin de cette rencontre qui se tient <span class="important">en février 2001</span>, le manifest en développement Agile de logiciels (que l'on nomme désormais manifest Agile) est créé.</p>
+				</section>
+
+				<section>
+					<h3>Selon vous, l'Agilité, c'est quoi ?</h3>
+					<img src="./img/AgiliteCestQuoi.png" alt="reponse"/>
+				</section>
+
+				<section>
+					<h3>Une mode est une culture</h3>
+					<p class="fragment fade-in-then-semi-out justify">Une mode : de plus en plus d'organisations se disent Agile ou souhaitent le devenir. Tout un marché a été créé autour de ce thème et il existe même des postes dédiés (Scrum Master, Product Owner, etc..)</p>
+					<p class="fragment fade-in-then-semi-out justify">Une culture : un ensemble de connaissance et de facultés propres à l'Agilité, que l'on peut acquérir via des livres, des formations, etc.. </p>
+				</section>
+
+				<section>
+					<h3>Des cadres de travail et des outils</h3>
+					<p class="fragment fade-in-then-semi-out justify">Des cadres de travail : il y en a des dizaines et des dizaines, on citera par exemple Scrum, XP, Crystal Clear, Nexus, Evidence-Based, Safe, etc...</p>
+					<p class="fragment fade-in-then-semi-out justify">Des outils : il s'agit même d'une véritable boite à outils qui continue sans cesse d'être enrichie, parmi ces outils on pourra trouver le Planning Poker, le Burn Down Chart, l'Agile Board, etc...</p>
+				</section>
+
+				<section>
+					<h3>Une communauté et un état d'esprit</h3>
+					<p class="fragment fade-in-then-semi-out justify">Une communauté : il existent des conférences dédiées, des blogs et même des chaines Youtube qui ne parlent que de ça !</p>
+					<p class="fragment fade-in-then-semi-out justify">Un état d'esprit : on va y revenir de façon plus précise dans la suite de cette présentation, mais c'est le point le plus important car sans adhésion à cet état d'esprit, Agile est très souvent voué à l'échec et génère de la frustration.</p>
+				</section>
+
+				<section>
+					<h3>L'Agilité c'est quoi ?</h3>
+					<p class="fragment fade-in-then-semi-out justify">Vous l'aurez compris, il s'agit de tout ça à la fois, et donc <span class="important">toutes les réponses citées sont vraies.</span></p>
+				</section>
+
+				<section>
+					<h3>Partie 2 / 4</h3>
+					<h2>L'approche Agile</h2>
+				</section>
+
+				<section>
+					<h3>Qu'est-ce qui est variable dans un projet en fonctionnement Agile ?</h3>
+					<img src="./img/Variable.png" alt="reponse"/>
+				</section>
+
+				<section>
+					<h3>L'Iron Triangle Agile</h3>
+					<img src="./img/IronTriangle.png" alt="iron triangle"/>
+				</section>
+
+				<section>
+					<h3>Par quoi commencer la tranformation Agile d'une organisation ?</h3>
+					<img src="./img/Transformation.png" alt="reponse"/>
+				</section>
+
+				<section>
+					<h3>La pyramide Agile</h3>
+					<img src="./img/PyramideAgile.png" alt="pyramide agile" height="500"/>
+				</section>
+
+				<section>
+					<h3>Partie 3 / 4</h3>
+					<h2>Zoom sur le manifest Agile</h2>
+				</section>
+
+				<section>
+					<h3>Les signataires (1/3)</h3>
+					<p class="fragment fade-in-then-semi-out justify">Kent Beck : cofondateur de l'eXtreme Programming (XP) et co-créateur de JUnit</p>
+					<p class="fragment fade-in-then-semi-out justify">Mike Beedle : référence sur Scrum</p>
+					<p class="fragment fade-in-then-semi-out justify">Arie Van Bennekum : cofondateur de DSDM/RAD</p>
+					<p class="fragment fade-in-then-semi-out justify">Alistair Cockburn : créateur de Crystal Clear</p>
+					<p class="fragment fade-in-then-semi-out justify">Ward Cunningham : cofondateur de l'eXtreme Programming (XP) et créateur du Wiki</p>
+					<p class="fragment fade-in-then-semi-out justify">Martin Fowler : cofondateur de DSDM/RAD et référence sur l'XP et le refactoring</p>
+				</section>
+				<section>
+					<h3>Les signataires (2/3)</h3>
+					<p class="fragment fade-in-then-semi-out justify">James Grenning : créateur du Planning Poker et référence sur C++</p>
+					<p class="fragment fade-in-then-semi-out justify">Jim Highsmith : créateur de l'Adaptative Software Development (ASD)</p>
+					<p class="fragment fade-in-then-semi-out justify">Andrew Hunt : fondateur de l'Agile Alliance et référence sur le développement logiciel</p>
+					<p class="fragment fade-in-then-semi-out justify">Ron Jeffries : cofondateur de l'eXtreme Programming (XP)</p>
+					<p class="fragment fade-in-then-semi-out justify">Jon Kern : référence sur la conception logicielle</p>
+					<p class="fragment fade-in-then-semi-out justify">Brian Marick : créateur du quadrants des tests Agiles et référence sur différents langages de développement</p>
+				</section>
+				<section>
+					<h3>Les signataires (3/3)</h3>
+					<p class="fragment fade-in-then-semi-out justify">Robert C. Martin : fondateur du Software Craftsmanship et référence sur les bonnes pratiques de développement</p>
+					<p class="fragment fade-in-then-semi-out justify">Steve Mellor : créateur de l'Executive UML et de la méthode Object Oriented Analysis (OOA)</p>
+					<p class="fragment fade-in-then-semi-out justify">Ken Schwaber : cofondateur de Scrum</p>
+					<p class="fragment fade-in-then-semi-out justify">Jeff Sutherland : cofondateur de Scrum</p>
+					<p class="fragment fade-in-then-semi-out justify">Dave Thomas : cofondateur de DSDM/RAD et référence sur Ruby</p>
+				</section>
+
+				<section>
+					<h3>Les 4 valeurs Agile</h3>
+					<small>
+						<p class="fragment fade-in-then-semi-out">Les individus et leurs interactions plus que les processus et les outils</p>
+						<p class="fragment fade-in-then-semi-out">Des logiciels opérationnels plus qu’une documentation exhaustive</p>
+						<p class="fragment fade-in-then-semi-out">La collaboration avec les clients plus que la négociation contractuelle</p>
+						<p class="fragment fade-in-then-semi-out">L’adaptation au changement plus que le suivi d’un plan</p>
+					</small>
+				</section>
+
+				<section>
+					<h3>Les 12 principes Agile (1/3)</h3>
+					<small>
+						<p class="fragment fade-in-then-semi-out">Notre plus haute priorité est de satisfaire le client en livrant rapidement et régulièrement des fonctionnalités à grande valeur ajoutée.</p>
+						<p class="fragment fade-in-then-semi-out">Accueillez positivement les changements de besoins, même tard dans le projet. Les processus Agiles exploitent le changement pour donner un avantage compétitif au client.</p>
+						<p class="fragment fade-in-then-semi-out">Livrez fréquemment un logiciel opérationnel avec des cycles de quelques semaines à quelques mois et une préférence pour les plus courts.</p>
+						<p class="fragment fade-in-then-semi-out">Les utilisateurs ou leurs représentants et les développeurs doivent travailler ensemble quotidiennement tout au long du projet.</p>
+					</small>
+				</section>
+
+				<section>
+					<h3>Les 12 principes Agile (2/3)</h3>
+					<small>
+						<p class="fragment fade-in-then-semi-out">Réalisez les projets avec des personnes motivées. Fournissez-leur l’environnement et le soutien dont ils ont besoin et faites-leur confiance pour atteindre les objectifs fixés.</p>
+						<p class="fragment fade-in-then-semi-out">La méthode la plus simple et la plus efficace pour transmettre de l’information à l’équipe de développement et à l’intérieur de celle-ci est le dialogue en face à face.</p>
+						<p class="fragment fade-in-then-semi-out">Un logiciel opérationnel est la principale mesure d’avancement.</p>
+						<p class="fragment fade-in-then-semi-out">Les processus Agiles encouragent un rythme de développement soutenable. Ensemble, les commanditaires, les développeurs et les utilisateurs devraient être capables de maintenir indéfiniment un rythme constant.</p>
+					</small>
+				</section>
+
+				<section>
+					<h3>Les 12 principes Agile (3/3)</h3>
+					<small>
+						<p class="fragment fade-in-then-semi-out">Une attention continue à l’excellence technique et à une bonne conception renforce l’Agilité.</p>
+						<p class="fragment fade-in-then-semi-out">La simplicité – c’est à dire l’art de minimiser la quantité de travail inutile – est essentielle.</p>
+						<p class="fragment fade-in-then-semi-out">Les meilleures architectures, spécifications et conceptions émergent d’équipes auto-organisées.</p>
+						<p class="fragment fade-in-then-semi-out">A intervalles réguliers, l’équipe réfléchit aux moyens de devenir plus efficace, puis règle et modifie son comportement en conséquence.</p>
+					</small>
+				</section>
+
+				<section>
+					<h3>Partie 4 / 4</h3>
+					<h2>Le futur de l'Agilité</h2>
+				</section>
+
+				<section>
+					<h3>Le futur de l'Agilité</h3>
+					<p class="fragment fade-in-then-semi-out justify">Au fur et à mesure des années, l'Agilité a été perçu par certains comme un nouveau produit à vendre plus que comme un mouvement de pensées bienveillant nécessitant un changement de mentalité.</p>
+					<p class="fragment fade-in-then-semi-out justify">Cela a conduit certaines personnes, dont quelques-uns des signataires du manifest Agile, à faire de nouvelles propositions pour renouer avec l'état d'esprit Agile.</p>
+					<p class="fragment fade-in-then-semi-out justify">Cette remise en question a conduit à plusieurs chemins d'améliorations : un retour aux sources de l'Agilité, une mise à jour du manifest Agile et le lancement de nouveaux mouvements</p>
+				</section>
+
+				<section>
+					<h3>La proposition d'Alistair Cockburn, un des signataires du manifest Agile</h3>
+					<img src="./img/Alistair.png" alt="reponse"/>
+				</section>
+
+				<section>
+					<h3>Hearth of Agile</h3>
+					<img src="./img/HearthOfAgile.png" alt="Hearth of Agile" height="500"/>
+				</section>
+
+				<section>
+					<h3>La proposition du CEO d'Industrial Logic</h3>
+					<img src="./img/Joshua.png" alt="reponse"/>
+				</section>
+
+				<section>
+					<h3>Modern Agile</h3>
+					<img src="./img/ModernAgile.png" alt="Modern Agile" height="500"/>
+				</section>
+
+				<section>
+					<h3>Différentes versions de management</h3>
+					<img src="./img/Management3.png" alt="reponse"/>
+				</section>
+				
+				<section>
+					<h3>Management 3.0</h3>
+					<p class="fragment fade-in-then-semi-out justify">Management 1.0 : vision tayloriste où les maîtres mots sont "Command & Control"</p>
+					<p class="fragment fade-in-then-semi-out justify">Management 2.0 : les employés deviennent des "collaborateurs" avec qui la hiérarchie veut bien partager quelques informations leur permettant ainsi de faciliter le travail</p>
+					<p class="fragment fade-in-then-semi-out justify">Management 3.0 : avec l'avénement de l'Agilité, la hiérachie se tranforme en servant-leader et sert avant tout de support aux équipes pour la prise de décision</p>
+				</section>
+
+				<section>
+					<h3>La proposition de Robert C. Martin, un des signataires du manifest Agile</h3>
+					<img src="./img/Robert.png" alt="reponse"/>
+				</section>
+
+				<section>
+					<h3>Craftsmanship over execution</h3>
+					<p class="fragment fade-in-then-semi-out justify">En 2008, Robert C. Martin propose <span class="important">Craftsmanship over execution</span> comme 5ème valeur du manifest pour mettre en avant le savoir-faire de l'artisanat avant la simple réalisation.</p>
+					<p class="fragment fade-in-then-semi-out justify">La proposition n'ayant pas été intégrée dans le manifest mais suscitant tout de même beaucoup d'adhésion, une réunion est tenue en 2009 dans l'Illinois.</p>
+					<p class="fragment fade-in-then-semi-out justify">Au terme de cette réunion, un nouveau manifest est créé, celui de l'artisanat logiciel, ou en anglais du <span class="important">Software Craftsmanship</span></p>
+				</section>
+
+				<section>
+					<h3>Les infos de la fin</h3>
+				</section>
+
+				<section>
+					<h3>Lequel est un outil Agile que l'on va utiliser ?</h3>
+					<img src="./img/ROTI.png" alt="reponse"/>
+				</section>
+
+				<section>
+					<h3>R.O.T.I</h3>
+					<p class="justify">R.O.T.I pour Return Of Time Invested</p>
+					<p class="justify">Pouvez-vous donner une note de 1 à 5 à cette présentation avec :</p>
+					<img src="./img/ROTI2.png" alt="ROTI" height="300"/>
+					<p class="justify">Qu'est-ce que je pourrais améliorer à cette présentation pour augmenter votre note ?</p>
+				</section>
+
+				<section>
+					<h3>Gardons contact</h3>
+					<p class="justify">En cas de questions, n'hésitez pas à me contacter : <a href="MAILTO:jimmy.rundstadler@davidson.fr">jimmy.rundstadler@davidson.fr</a></p><br />
+					<p class="justify">Vous pouvez retrouver toutes les informations de cette présentation et un parcours d'introduction à l'Agilité sur mon blog : <a href="https://kaizendeveloper.wordpress.com/">Kaizen Developer</a></p>
+				</section>
+
+				<!-- Remerciements / Questions -->
+				<section>
+					<h3>Merci de votre attention</h3>
+				</section>
+			</div>
+			<div id="footer">
+				<small>
+					<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+				</small>
+			</div>
+			<div id="createdBy">
+				<small><small>Créée par Jimmy RUNDSTADLER<br />Sources disponibles sur <a href="https://github.com/Jorg722/">github.com/Jorg722</a></small></small>
+			</div>
+		</div>
+
+		<script src="reveal/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+
+				// Custom config
+				transition: 'convex',
+				controlsTutorial: true,
+				mouseWheel: true,
+				hideCursorTime: 2000,
+				pdfSeparateFragments: false,
+
+				dependencies: [
+					{ src: 'reveal/plugin/markdown/marked.js' },
+					{ src: 'reveal/plugin/markdown/markdown.js' },
+					{ src: 'reveal/plugin/notes/notes.js', async: true },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
